@@ -24,11 +24,11 @@ body{
 }
 
 /* HEADER */
-.header{padding:54px 22px 14px;position:sticky;top:0;background:var(–bg);z-index:10;border-bottom:1px solid var(–border)}
+.header{padding:18px 22px 14px;position:relative;top:0;background:var(–bg);z-index:10;border-bottom:1px solid var(–border)}
 .header-row{display:flex;justify-content:space-between;align-items:flex-start}
 .date-lbl{font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(–muted);margin-bottom:3px}
 .app-title{font-family:‘DM Serif Display’,serif;font-size:28px;letter-spacing:-.02em}
-.goals-chip{background:none;border:1px solid var(–border);border-radius:99px;padding:6px 13px;font-family:‘DM Sans’,sans-serif;font-size:11px;font-weight:500;color:var(–soft);cursor:pointer;transition:all .15s;margin-top:6px}
+.goals-chip{background:none;border:1.5px solid var(–accent);border-radius:99px;padding:6px 13px;font-family:‘DM Sans’,sans-serif;font-size:11px;font-weight:500;color:var(–accent);cursor:pointer;transition:all .15s;margin-top:6px}
 .goals-chip:active{border-color:var(–accent);color:var(–accent)}
 
 /* CAL RING */
@@ -730,7 +730,7 @@ body{
 </div>
 
 <script>
-const SK='macros_v6';
+const SK='macros_v7';
 const _td='2026-03-16';const _tm='2026-03-17';let S={goals:{cal:1894,p:130,c:209,f:60},log:{[_td]:[{meal:'Breakfast',name:'3 whole eggs',cal:215,p:19,c:1,f:15,emoji:'🥚'},{meal:'Breakfast',name:'1 paratha',cal:300,p:5,c:35,f:16,emoji:'🫓'},{meal:'Breakfast',name:'Chocolate milk 250ml',cal:180,p:7,c:26,f:6,emoji:'🥛'},{meal:'Breakfast',name:'2 coffees',cal:160,p:8,c:12,f:6,emoji:'☕'},{meal:'Breakfast',name:'1 tea',cal:40,p:1,c:7,f:1,emoji:'🍵'},{meal:'Lunch',name:'2 toasts + cranberry jam',cal:220,p:5,c:42,f:3,emoji:'🍞'},{meal:'Lunch',name:'Spar mozz & tomato basil sandwich',cal:380,p:16,c:42,f:16,emoji:'🥪'},{meal:'Dinner',name:'4 chicken wings spicy + oil',cal:420,p:32,c:8,f:28,emoji:'🍗'}],[_tm]:[{meal:'Breakfast',name:'Skyr yogurt low fat 200g',cal:118,p:22,c:10,f:0,emoji:'🫙'},{meal:'Breakfast',name:'Oats 30g',cal:114,p:4,c:19,f:2,emoji:'🥣'},{meal:'Breakfast',name:'Chia seeds 1 tbsp',cal:58,p:2,c:5,f:4,emoji:'🌱'},{meal:'Breakfast',name:'ESN Whey protein 1 scoop',cal:120,p:24,c:3,f:2,emoji:'🥛'},{meal:'Breakfast',name:'Honey 1 tsp',cal:21,p:0,c:6,f:0,emoji:'🍯'},{meal:'Lunch',name:'2 chicken fajitas (flour tortilla, chicken, peppers, onion, olive oil, cheese)',cal:820,p:70,c:58,f:34,emoji:'🌮'},{meal:'Dinner',name:'Chicken & chickpea bake (1/4 pan)',cal:514,p:43,c:35,f:21,emoji:'🍳'}]},weights:[],startWeight:86};
 function load(){try{const s=localStorage.getItem(SK);if(s)S=JSON.parse(s);}catch(e){}}
 function save(){try{localStorage.setItem(SK,JSON.stringify(S));}catch(e){}}
